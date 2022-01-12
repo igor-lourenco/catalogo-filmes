@@ -48,6 +48,7 @@ public class PontuacaoService {
 		
 		double media = soma / filmeEntity.getPontuacoes().size();
 		
+		
 		filmeEntity.setPontuacao(media);
 		filmeEntity.setCount(filmeEntity.getPontuacoes().size());
 		filmeEntity = filmeRepository.save(filmeEntity);
