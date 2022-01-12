@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 @Embeddable
 public class PontuacaoPK implements Serializable{
 	private static final long serialVersionUID = 1L;
+	
 	@ManyToOne
 	@JoinColumn(name = "filme_id")
 	private Filme filme;

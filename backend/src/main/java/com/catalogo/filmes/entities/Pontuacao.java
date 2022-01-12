@@ -15,13 +15,11 @@ public class Pontuacao {
 	private PontuacaoPK id = new PontuacaoPK();
 	private Double valor;
 	
-	@SuppressWarnings("unused")
-	private void setFilme(Filme filme) {
+	public void setFilme(Filme filme) {
 		id.setFilme(filme);
 	}
 	
-	@SuppressWarnings("unused")
-	private void setUsuario(Usuario usuario) {
+	public void setUsuario(Usuario usuario) {
 		id.setUsuario(usuario);
 	}
 }
