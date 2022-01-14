@@ -31,9 +31,14 @@ function Listing() {
       });
   }, [pageNumber]);
 
+  //função para recarregar o estado da pagina com o numero da pagina vindo como parmetro
+  const handlePageChange = (newPageNumber: number) => {
+    setPageNumer(newPageNumber);
+  }
+
   return (
     <>
-      <Pagination />
+      <Pagination page={page} onChange={handlePageChange} />
       <div className="container">
         <div className="row">
           {page.content.map((movie) => (
