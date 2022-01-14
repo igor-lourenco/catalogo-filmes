@@ -1,15 +1,19 @@
 import Estrela from "components/Estrelas";
 import './styles.css';
 
-function Score() {
-  const score = 3.5;
-  const count = 13;
+
+type Props = {
+  score: number;
+  count: number;
+}
+
+function Score({count, score} : Props) {
   return (
     <div className="dsmovie-score-container">
       <p className="dsmovie-score-value">
         {score > 0 ? score.toFixed(1) : "-"}
       </p>
-      <Estrela />
+      <Estrela score={score} />
       <p className="dsmovie-score-count">{count} avaliações</p>
     </div>
   );
