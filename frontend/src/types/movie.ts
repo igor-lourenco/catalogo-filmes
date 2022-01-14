@@ -1,9 +1,9 @@
 export type Movie = {
     id: number;
-    title: string;
-    score: number;
+    titulo: string;
+    pontuacao: number;
     count: number;
-    image: string;
+    imagem: string;
 }
 
 export type MoviePage = {
